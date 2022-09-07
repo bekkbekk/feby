@@ -1,0 +1,54 @@
+@media  (max-width: 900px) {
+    .hide-mob {
+        display: none;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+
+
+    .banner .container h1 {
+        font-size: 48px;
+    }
+
+    .banner .container h3 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+
+
+
+    .desc .container .abt-feby {
+        display: block;
+    }
+
+    .desc .container .abt-feby .feby-img img {
+        width: 270px;
+    }
+
+    .desc .container .abt-feby .content {
+        font-size: 15px;
+        margin-top: 55px;
+    }
+
+    .desc .container .abt-feby .content .info img {
+        width: 80px;
+        height: 80px;
+    }
+
+
+
+
+    .soc-meds .container .accounts {
+        display: grid;
+        grid-template-columns:280px;
+    }
+
+    footer {
+        height: 65px;
+        line-height: 65px;
+    }
+}

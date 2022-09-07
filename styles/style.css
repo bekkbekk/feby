@@ -1,0 +1,334 @@
+/* fonts */
+@font-face {
+    font-family: 'MerriRegular';
+    src: url(../fonts/MerriweatherSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'MerriBold';
+    src: url(../fonts/MerriweatherSans-Bold.ttf);
+}
+
+/* styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'MerriRegular', sans-serif;
+}
+
+/* body {
+    height: 3999px;
+} */
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 64px 0;
+}
+
+.container h2 {
+    font-family: 'MerriBold';
+    font-size: 32px;
+    /* text-align: center; */
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    color: #494949;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.8s ease all;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+header {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+
+    transition: 0.4s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    transition: 0.4s ease;
+}
+
+header.is-scrolling {
+    backdrop-filter: blur(10px);
+    background-color: rgba(195, 176, 145, 0.5);
+}
+
+header.is-scrolling .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .container h2 {
+    color: inherit;
+    font-size: 32px;
+    font-family: 'MerriBold';
+    margin: auto 0;
+    cursor: pointer;
+}
+
+header .container nav {
+    margin: auto 0;
+}
+
+header .container nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 24px;
+
+    transition: 0.4s ease;
+}
+
+header .container nav a:hover {
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.banner {
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    background-image: linear-gradient(rgba(195, 176, 145, 0.7), rgba(195, 176, 145, 0.7)), url(../images/feby\ bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.banner .container {
+    position: relative;
+    z-index: 1;
+}
+
+.banner .container h1 {
+    font-size: 72px;
+    font-family: 'MerriBold';
+    margin-bottom: 32px;
+}
+
+.banner .container h3 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    line-height: 50px;
+}
+
+
+
+
+
+
+
+.desc {
+    background-color: #e9eee5;
+}
+
+.desc .container .abt-feby {
+    /* height: 100vh; */
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+
+    /* place-items: center */
+    /* align-items: center; */
+    /* background-color: red; */
+}
+
+.desc .container .abt-feby .feby-img img {
+    width: 370px;
+    box-shadow: 8px 8px black;
+    cursor: pointer;
+}
+
+.desc .container .abt-feby .content {
+    /* background-color: blue; */
+    font-size: 20px;
+    text-align: justify;
+}
+
+.desc .container .abt-feby .content .info {
+    display: flex;
+    border: 2px inset black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    cursor: pointer;
+    /* height: 110px; */
+    padding: 10px;
+
+    transition: 0.4s ease;
+}
+
+.desc .container .abt-feby .content .info:hover {
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 0 7px black;
+}
+
+.desc .container .abt-feby .content .info img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto 0;
+    /* margin-right: 10px; */
+}
+
+.desc .container .abt-feby .content .info p {
+    /* display: inline-block; */
+    line-height: 28px;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: auto 0;
+}
+
+
+
+
+
+
+.soc-meds {
+    /* height: 100vh; */
+    background-color: #f6ead8;
+    color: white;
+}
+
+/* .soc-meds .container h2 {
+    color: #494949;
+} */
+
+.soc-meds .container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.soc-meds .container .accounts {
+    /* display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-column-gap: 85px;
+    grid-row-gap: 50px;
+    justify-content: center;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.soc-meds .container .accounts .acct {
+    /* width: 280px; */
+    border: 2px outset #c3b091;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 1px 1px 6px black;
+    height: 370px;
+}
+
+.soc-meds .container .accounts .acct img {
+    width: 280px;
+    border-bottom: 8px solid #c3b091;
+}
+
+.soc-meds .container .accounts .acct .content {
+    padding: 10px 0;
+    line-height: 25px;
+    /* background-color: white; */
+}
+
+.soc-meds .container .accounts .acct .content h3 {
+    font-family: 'MerriBold';
+    margin-bottom: 5px;
+    color: black;
+}
+
+.soc-meds .container .accounts .acct .content p {
+    color: grey;
+}
+
+.soc-meds .container .accounts .acct .is-hovered {
+    width: 280px;
+    height: 370px;
+    background-color: #c3b091;
+    border-radius: 18px;
+    opacity: 0;
+    position: absolute;
+    align-items: center;
+
+    transition: 0.4s ease;
+}
+
+.soc-meds .container .accounts .acct:hover .is-hovered {
+    opacity: 0.75;
+}
+
+.soc-meds .container .accounts .acct .label {
+    position: absolute;
+    font-family: 'MerriBold';
+    font-size: 20px;
+    width: 280px;
+    line-height: 370px;
+    opacity: 0;
+    letter-spacing: 2px;
+    color: #fff;
+
+    transition: 0.4s ease;
+}
+
+.soc-meds .container .accounts .acct:hover .label {
+    opacity: 1;
+}
+
+
+
+
+footer {
+    height: 75px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 75px;
+}
