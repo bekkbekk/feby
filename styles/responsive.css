@@ -8,6 +8,16 @@
     }
 
 
+    header .container {
+        flex-direction: row-reverse;
+    }
+
+
+    .hamburger {
+        display: block;
+    }
+
+
 
     .banner .container h1 {
         font-size: 48px;

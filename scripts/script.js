@@ -1,4 +1,10 @@
-window.onload = function () {
+window.onload = function() {
+
+    // ---------- VARAIABLES ----------
+    var menu_btn = document.querySelector('.hamburger');
+    var mobile_nav = document.querySelector('.mobile-nav');
+    var header = document.querySelector('#header');
+    var febyName = document.querySelector('#feby-name');
 
     // intial events on loading screen
     if (window.pageYOffset > 78) {
@@ -6,20 +12,22 @@ window.onload = function () {
     }
     reveal();
 
-    // navbar
+    // ---------- EVENT LISTENERS ----------
     window.addEventListener("scroll", function (e) {
         // console.log(window.pageYOffset);
-
-        if (window.pageYOffset > 78) {
-            document.querySelector("#header").classList.add("is-scrolling")
-        } else {
-            document.querySelector("#header").classList.remove("is-scrolling")
-        }
+        showHeader();
+        reveal();
     });
 
-    // reveal animation
-    window.addEventListener("scroll", reveal);
+    menu_btn.addEventListener('click', function() {
+        menu_btn.classList.toggle("is-active");
+        mobile_nav.classList.toggle("is-active");
+        header.classList.toggle("is-active");
+        febyName.classList.toggle("is-active");
+    });
 
+
+    // ---------- FUNCTIONS ----------
     function reveal() {
         var reveals = document.querySelectorAll(".reveal");
 
@@ -32,6 +40,14 @@ window.onload = function () {
             } else {
                 reveals[i].classList.remove("active");
             }
+        }
+    }
+
+    function showHeader() {
+        if (window.pageYOffset > 78) {
+            document.querySelector("#header").classList.add("is-scrolling")
+        } else {
+            document.querySelector("#header").classList.remove("is-scrolling")
         }
     }
 
