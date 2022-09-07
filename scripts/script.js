@@ -17,6 +17,11 @@ window.onload = function() {
         // console.log(window.pageYOffset);
         showHeader();
         reveal();
+
+        menu_btn.classList.remove("is-active");
+        mobile_nav.classList.remove("is-active");
+        header.classList.remove("is-active");
+        febyName.classList.remove("is-active");
     });
 
     menu_btn.addEventListener('click', function() {
