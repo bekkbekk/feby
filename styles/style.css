@@ -161,23 +161,37 @@ header .container nav a:hover {
 .mobile-nav {
     position: fixed;
     top: 0;
-    left: -75%;
-    width: 75%;
+    left: -70%;
+    width: 70%;
     min-height: 100vh;
     background-color: #c3b091;
     z-index: 98;
 
     transition: 0.4s ease;
-
-    /* remove kapag aalsin na yung paragraph */
-    display: flex;
 }
 
-.mobile-nav p {
-    margin: auto;
-    padding: 50px;
+.mobile-nav .container-nav {
+    display: block;
+    margin-top: 85px;
+}
+
+.mobile-nav a {
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    padding: 15px;
     font-size: 25px;
-    line-height: 45px;
+    width: 250px;
+
+    text-decoration: none;
+    color: #fff;
+    font-family: 'MerriBold';
+
+    /* border: 1px solid black; */
+}
+
+.mobile-nav a:hover {
+    color: rgb(119, 119, 119);
 }
 
 .mobile-nav.is-active {

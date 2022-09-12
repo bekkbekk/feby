@@ -20,15 +20,15 @@ window.onload = function() {
 
         menu_btn.classList.remove("is-active");
         mobile_nav.classList.remove("is-active");
-        header.classList.remove("is-active");
-        febyName.classList.remove("is-active");
+        // header.classList.remove("is-active");
+        // febyName.classList.remove("is-active");
     });
 
     menu_btn.addEventListener('click', function() {
         menu_btn.classList.toggle("is-active");
         mobile_nav.classList.toggle("is-active");
-        header.classList.toggle("is-active");
-        febyName.classList.toggle("is-active");
+        // header.classList.toggle("is-active");
+        // febyName.classList.toggle("is-active");
     });
 
 
