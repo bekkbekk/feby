@@ -1,3 +1,9 @@
+@media  (max-width: 1067px) {
+    .soc-meds .container .accounts {
+        grid-template-columns: repeat(2, 280px);
+    }
+}
+
 @media  (max-width: 900px) {
     .hide-mob {
         display: none;
@@ -31,6 +37,9 @@
 
 
 
+
+
+
     .desc .container .abt-feby {
         display: block;
     }
@@ -44,6 +53,12 @@
         margin-top: 55px;
     }
 
+    .desc .container .abt-feby .content .info {
+        max-width: 330px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
     .desc .container .abt-feby .content .info img {
         width: 80px;
         height: 80px;
@@ -52,10 +67,45 @@
 
 
 
+
+
+
     .soc-meds .container .accounts {
-        display: grid;
-        grid-template-columns:280px;
+        grid-template-columns:240px;
     }
+
+    .soc-meds .container .accounts .acct {
+        height: 330px;
+    }
+
+    .soc-meds .container .accounts .acct img {
+        width: 240px;
+        border-bottom: 8px solid #c3b091;
+    }
+
+    .soc-meds .container .accounts .acct .is-hovered {
+        width: 240px;
+        height: 330px;
+    }
+
+    .soc-meds .container .accounts .acct .label {
+        position: absolute;
+        font-family: 'MerriBold';
+        font-size: 20px;
+        width: 240px;
+        line-height: 330px;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
     footer {
         height: 65px;

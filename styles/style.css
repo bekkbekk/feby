@@ -181,7 +181,7 @@ header .container nav a:hover {
     margin-bottom: 15px;
     padding: 15px;
     font-size: 25px;
-    width: 250px;
+    /* width: 250px; */
 
     text-decoration: none;
     color: #fff;
@@ -275,12 +275,12 @@ header.is-active .container {
 .desc .container .abt-feby .content {
     /* background-color: blue; */
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
 }
 
 .desc .container .abt-feby .content .info {
     display: flex;
-    border: 2px inset black;
+    border: 2px outset black;
     border-radius: 10px;
     overflow: hidden;
     margin-top: 20px;
@@ -292,8 +292,8 @@ header.is-active .container {
 }
 
 .desc .container .abt-feby .content .info:hover {
-    background-color: #fff;
-    border-color: #fff;
+    background-color: #adadad;
+    border-color: #8f8f8f;
     box-shadow: 0 0 7px black;
 }
 
