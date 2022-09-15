@@ -1,0 +1,148 @@
+header {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+
+    transition: 0.4s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    z-index: 999;
+
+    transition: 0.4s ease;
+}
+
+header.is-scrolling {
+    backdrop-filter: blur(10px);
+    background-color: rgba(195, 176, 145, 0.5);
+}
+
+header.is-scrolling .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header .container h2 {
+    color: inherit;
+    font-size: 32px;
+    font-family: 'MerriBold';
+    margin: auto 0;
+    cursor: pointer;
+
+    transition: 0.4s ease;
+}
+
+header .container nav {
+    margin: auto 0;
+}
+
+header .container nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 24px;
+
+    transition: 0.4s ease;
+}
+
+header .container nav a:hover {
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.hamburger {
+    position: relative;
+    display: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 6px 0;
+    transition: 0.8s ease;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-405deg) translate(-9px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(405deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: -70%;
+    width: 70%;
+    min-height: 100vh;
+    background-color: #c3b091;
+    z-index: 98;
+
+    transition: 0.4s ease;
+}
+
+.mobile-nav .container-nav {
+    display: block;
+    margin-top: 85px;
+}
+
+.mobile-nav a {
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 25px;
+    /* width: 250px; */
+
+    text-decoration: none;
+    color: #fff;
+    font-family: 'MerriBold';
+
+    /* border: 1px solid black; */
+}
+
+.mobile-nav a:hover {
+    color: rgb(119, 119, 119);
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+header .container h2.is-active {
+    display: none;
+}
+
+header.is-active .container {
+    flex-direction: row;
+}

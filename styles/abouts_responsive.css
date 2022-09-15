@@ -1,0 +1,41 @@
+@media  (max-width: 900px) {
+    .hide-mob {
+        display: none;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+
+    header .container {
+        flex-direction: row-reverse;
+    }
+
+
+    .hamburger {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer {
+        height: 65px;
+        line-height: 65px;
+    }
+}
