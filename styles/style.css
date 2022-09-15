@@ -17,6 +17,10 @@
     font-family: 'MerriRegular', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* body {
     height: 3999px;
 } */

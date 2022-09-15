@@ -17,9 +17,8 @@
     font-family: 'MerriRegular', sans-serif;
 }
 
-body {
-    background: #800000;
-    height: 2500px;
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -28,19 +27,71 @@ body {
     padding: 64px 0;
 }
 
-header.is-scrolling {
-    backdrop-filter: blur(10px);
-    background-color: rgba(15, 193, 206, 0.5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landing-page {
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/abouts/shore_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    min-height: 100vh;
+}
+
+.landing-page .container {
+    /* background-color: red; */
+}
+
+.landing-page h2 {
+    margin: 25px 7%;
+    text-align: center;
+    padding-bottom: 8px;
+
+    font-size: 38px;
+    font-family: 'MerriBold';
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+}
+
+.my-img {
+    display: flex;
+    align-items: center;
+}
+
+.landing-page .my-img img {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+
+    border-radius: 50%;
+    border: solid 2px white;
+}
+
+.container h3 {
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    margin: 25px;
+}
+
+.container p {
+    text-align: center;
 }
 
 
 
 
-
-
-.sample {
-    height: 100%;
-}
 
 
 
