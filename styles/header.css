@@ -102,11 +102,12 @@ header .container nav a:hover {
 .mobile-nav {
     position: fixed;
     top: 0;
-    left: -70%;
+    left: -71%;
     width: 70%;
     min-height: 100vh;
     background-color: #c3b091;
     z-index: 98;
+    border-right: 1px inset white;
 
     transition: 0.4s ease;
 }

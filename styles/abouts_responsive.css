@@ -25,6 +25,21 @@
 
 
 
+    .details .my-img img {
+        width: 190px;
+    }
+
+    .details h3 {
+        font-size: 28px;
+    }
+
+
+
+
+
+
+
+
 
 
 
@@ -37,5 +52,11 @@
     footer {
         height: 65px;
         line-height: 65px;
+    }
+}
+
+@media  (max-width: 530px) {
+    .details {
+        width: 85%;
     }
 }

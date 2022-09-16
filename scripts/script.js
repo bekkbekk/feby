@@ -1,10 +1,11 @@
-window.onload = function() {
+window.onload = function () {
 
     // ---------- VARAIABLES ----------
     var menu_btn = document.querySelector('.hamburger');
     var mobile_nav = document.querySelector('.mobile-nav');
     var header = document.querySelector('#header');
     var febyName = document.querySelector('#feby-name');
+    // --> abouts
 
     // intial events on loading screen
     if (window.pageYOffset > 78) {
@@ -24,7 +25,7 @@ window.onload = function() {
         // febyName.classList.remove("is-active");
     });
 
-    menu_btn.addEventListener('click', function() {
+    menu_btn.addEventListener('click', function () {
         menu_btn.classList.toggle("is-active");
         mobile_nav.classList.toggle("is-active");
         // header.classList.toggle("is-active");

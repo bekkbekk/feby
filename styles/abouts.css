@@ -64,32 +64,69 @@ html {
     border-bottom: 2px solid white;
 }
 
-.my-img {
-    display: flex;
-    align-items: center;
-}
 
-.landing-page .my-img img {
-    display: block;
-    width: 200px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.details {
+    width: 70%;
+    /* min-height: 75vh; */
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
+    border-radius: 8px;
+    padding: 10px;
 
-    border-radius: 50%;
-    border: solid 2px white;
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: 1.4s all ease-in-out;
 }
 
-.container h3 {
+.details.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.details .my-img {
     display: block;
-    font-size: 28px;
     text-align: center;
-    margin: 25px;
+    padding: 15px;
+    /* background-color: red; */
 }
 
-.container p {
-    text-align: center;
+.details .my-img img {
+    width: 250px;
+    border: 1px inset #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 1px white;
+    cursor: pointer;
 }
 
+.details h3 {
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
 
+.details .msg {
+    padding: 0 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+
+    margin-bottom: 15px;
+}
 
 
 
